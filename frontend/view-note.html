@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>View Note | Auth Notes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <div>
+            <h1 class="app-title">Auth Notes</h1>
+            <h2 id="noteTitle" class="page-title"></h2>
+        </div>
+
+        <div class="header-actions">
+            <button id="searchToggleBtn" class="btn btn-secondary">🔍 Search</button>
+            <button id="backBtn" class="btn btn-secondary">← Back</button>
+            <button id="starBtn" class="btn btn-secondary">☆</button>
+            <button id="exportBtn" class="btn btn-primary">Export .txt</button>
+        </div>
+    </header>
+
+    <!-- Search bar (hidden by default) -->
+    <div id="searchBox" class="note-search-box hidden">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search inside this note..."
+        />
+    </div>
+
+    <section class="note-view">
+        <div class="note-box">
+            <p id="noteContent"></p>
+        </div>
+    </section>
+</div>
+
+<script src="js/view-note.js"></script>
+</body>
+</html>

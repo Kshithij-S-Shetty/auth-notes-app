@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Auth Notes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-main">
+        <h1 class="app-title">Auth Notes</h1>
+        <h2 id="welcomeText" class="welcome-text"></h2>
+      </div>
+      <div class="header-actions">
+        <a href="add-note.html" class="btn btn-primary">+ Add Note</a>
+        <button id="logoutBtn" class="btn btn-logout">Logout</button>
+      </div>
+    </header>
+
+    <section class="notes-section">
+      <div class="section-header">
+        <h3 class="section-title">Your Notes</h3>
+        <select id="sortSelect" class="sort-select">
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="title">Title A-Z</option>
+        </select>
+      </div>
+      <input type="text" id="searchInput" class="search-input" placeholder="Search notes...">
+      <div id="notesContainer"></div>
+    </section>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
