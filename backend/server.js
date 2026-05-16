@@ -20,7 +20,7 @@ app.use("/api", authRoutes);
 app.use("/api/notes", notesRoutes);
 
 app.get("/", (req, res) => {
-    res.send("Auth Notes Backend is running");
+    res.send("DevOps Auto Deployment Successful");
 });
 
 app.listen(PORT, () => {
